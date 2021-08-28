@@ -41,6 +41,10 @@ button:hover {
     font-weight: 700;
 }
 
+figcaption {
+    text-align: center;
+}
+
 
 /* Header Styles */
 
@@ -132,10 +136,6 @@ button:hover {
     margin: 25px 0;
 }
 
-#skills figcaption {
-    text-align: center;
-}
-
 
 /* Projects Styles */
 
@@ -181,6 +181,24 @@ button:hover {
 }
 
 .project-links img:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+
+/* Contact Styles */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container a {
+    margin: 0 50px;
+}
+
+.contact-container img:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
