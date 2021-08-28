@@ -5,10 +5,6 @@ body {
     font-size: 20px;
 }
 
-main {
-    margin: 0 10%;
-}
-
 p {
     line-height: 1.5em;
 }
@@ -17,6 +13,32 @@ p {
     text-transform: uppercase;
     font-size: 2em;
     text-align: center;
+}
+
+#bio, #skills, #projects, #contact {
+    margin-top: 75px;
+}
+
+#bio, #skills, #contact {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(128, 22, 13);
+    padding: 15px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(128, 22, 13, 0.75);
+    font-weight: 700;
 }
 
 
@@ -81,7 +103,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 75px;
 }
 
 .about img {
@@ -99,10 +120,6 @@ p {
 
 /* Skills Styles */
 
-#skills {
-    margin-top: 75px;
-}
-
 #skills p {
     margin: 0 15%;
 }
@@ -117,4 +134,53 @@ p {
 
 #skills figcaption {
     text-align: center;
+}
+
+
+/* Projects Styles */
+
+#projects {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.033);
+}
+
+#projects h2 {
+    padding-top: 25px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+}
+
+.project {
+    margin: 25px;
+    padding: 30px;
+    border: 5px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.screenshot {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.project h3 {
+    text-align: center;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+}
+
+.project-links a {
+    margin-right: 25px;
+}
+
+.project-links img:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 }
