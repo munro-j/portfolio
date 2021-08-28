@@ -1,0 +1,33 @@
+/* Universal Styles */
+
+body {
+    font-family: 'Ubuntu', 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+
+/* Header Styles */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 1.125em;
+}
+
+.menu a:hover {
+    font-weight: 700;
+}
