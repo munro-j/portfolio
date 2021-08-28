@@ -202,3 +202,22 @@ figcaption {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
+
+
+/* Footer Styles */
+
+#bottom {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+footer p {
+    color: white;
+    font-size: 0.8em;
+}
