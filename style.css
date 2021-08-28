@@ -2,7 +2,15 @@
 
 body {
     font-family: 'Ubuntu', 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+main {
+    margin: 0 10%;
+}
+
+p {
+    line-height: 1.5em;
 }
 
 
@@ -36,7 +44,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 0;
+    margin: 50px 0;
 }
 
 .greeting img {
@@ -58,4 +66,32 @@ body {
 .greeting span {
     font-size: 2em;
     color: rgb(128, 22, 13);
+}
+
+
+/* Bio Styles */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.about img {
+    max-height: 100%;
+    width: auto;
+}
+
+.about-text {
+    padding: 0 25px;
+    background-color: rgba(245, 245, 220, 0.67);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.about-text h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
 }
