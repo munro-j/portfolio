@@ -31,3 +31,31 @@ body {
 .menu a:hover {
     font-weight: 700;
 }
+
+.greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.greeting img {
+    border-radius: 50%;
+    max-height: 250px;
+    width: auto;
+}
+
+.greeting img, .greeting h2 {
+    padding: 0 20px;
+}
+
+.greeting h2 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: rgba(0, 0, 0, 0.9)
+}
+
+.greeting span {
+    font-size: 2em;
+    color: rgb(128, 22, 13);
+}
