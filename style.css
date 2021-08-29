@@ -1,5 +1,15 @@
 /* Universal Styles */
 
+/* @media only screen and (min-width: 320px) and (max-width: 905px) {
+    body {
+        font-size: 18px;
+    }
+
+    p {
+        line-height: 1.25em;
+    }
+} */
+
 body {
     font-family: 'Ubuntu', 'Roboto', sans-serif;
     font-size: 20px;
@@ -7,6 +17,10 @@ body {
 
 p {
     line-height: 1.5em;
+}
+
+header, footer {
+    width: 100%;
 }
 
 .section-header {
@@ -47,6 +61,50 @@ figcaption {
 
 
 /* Header Styles */
+
+@media only screen and (min-width: 320px) and (max-width: 419px) {
+    .pipe {
+        display: none;
+    }
+
+    .menu li {
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (max-width: 691px) {
+    .menu {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 905px) {
+    .menu {
+        margin: 0 10px;
+    }
+
+    .menu li {
+        padding: 0 5px;
+    }
+
+    .menu a {
+        color: rgb(128, 22, 13);
+        font-weight: 700;
+    }
+
+    .greeting {
+        flex-direction: column;
+    }
+
+    .greeting img, .greeting h2 {
+        padding: 0;
+    }
+
+    .greeting h2 {
+        text-align: center;
+    }
+}
 
 .menu {
     display: flex;
@@ -92,7 +150,7 @@ figcaption {
 .greeting h2 {
     text-transform: uppercase;
     font-size: 2.5em;
-    color: rgba(0, 0, 0, 0.9)
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .greeting span {
@@ -103,10 +161,24 @@ figcaption {
 
 /* Bio Styles */
 
+@media only screen and (min-width: 320px) and (max-width: 905px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about-img {
+        display: none;
+    }
+}
+
 .about {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.about-img {
+    max-width: 50%;
 }
 
 .about img {
@@ -139,10 +211,20 @@ figcaption {
 
 /* Projects Styles */
 
-#projects {
+@media only screen and (min-width: 320px) and (max-width: 488px) {
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-links a {
+        margin: 5px 0;
+    }
+}
+
+/* #projects {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.033);
-}
+} */
 
 #projects h2 {
     padding-top: 25px;
@@ -152,7 +234,8 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10%;
+    flex-wrap: wrap;
+    /* margin: 0 10%; */
 }
 
 .project {
@@ -160,11 +243,14 @@ figcaption {
     padding: 30px;
     border: 5px solid black;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.033);
+    max-width: 50%;
 }
 
 .screenshot {
     border: 1px solid rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+    height: auto;
 }
 
 .project h3 {
@@ -192,10 +278,11 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
 }
 
 .contact-container a {
-    margin: 0 50px;
+    margin: 0 30px;
 }
 
 .contact-container img:hover {
