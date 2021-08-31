@@ -247,26 +247,13 @@ footer p {
 
 /* Responsive Styles */
 
-@media only screen and (min-width: 320px) and (max-width: 419px) {
-    .pipe {
-        display: none;
-    }
-
-    .menu li {
-        text-align: center;
-        margin: 5px 0;
-    }
-}
-
-@media only screen and (max-width: 691px) {
-    .menu {
-        flex-direction: column;
-    }
-}
-
 @media only screen and (max-width: 905px) {
     .menu {
         margin: 0 10px;
+    }
+
+    menu h1 {
+        text-align: center;
     }
 
     .menu li {
@@ -291,7 +278,25 @@ footer p {
     }
 }
 
+@media only screen and (max-width: 691px) {
+    .menu {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 419px) {
+    .pipe {
+        display: none;
+    }
+
+    .menu li {
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 905px) {
+
     .about {
         flex-direction: column;
     }
