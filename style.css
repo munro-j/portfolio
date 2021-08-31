@@ -278,23 +278,30 @@ footer p {
     }
 }
 
-@media only screen and (max-width: 691px) {
+@media only screen and (max-width: 752px) {
     .menu {
         flex-direction: column;
-        justify-content: center;
     }
 }
 
-@media only screen and (min-width: 320px) /* and (max-width: 419px) */ {
+@media only screen and (max-width: 449px) {
     .pipe {
         display: none;
     }
+}
 
+@media only screen and (max-width: 339px) {
+    .menu h1 {
+        font-size: 2rem;
+    }
+}
+
+/* @media only screen and (min-width: 320px) and (max-width: 419px) {
     .menu li {
         text-align: center;
         margin: 5px 0;
     }
-}
+} */
 
 @media only screen and (min-width: 320px) and (max-width: 905px) {
 
