@@ -11,7 +11,7 @@
 } */
 
 body {
-    font-family: 'Ubuntu', 'Roboto', sans-serif;
+    font-family: "Ubuntu", "Roboto", sans-serif;
     font-size: 20px;
 }
 
@@ -19,7 +19,8 @@ p {
     line-height: 1.5em;
 }
 
-header, footer {
+header,
+footer {
     width: 100%;
 }
 
@@ -29,11 +30,16 @@ header, footer {
     text-align: center;
 }
 
-#bio, #skills, #projects, #contact {
+#bio,
+#skills,
+#projects,
+#contact {
     margin-top: 75px;
 }
 
-#bio, #skills, #contact {
+#bio,
+#skills,
+#contact {
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -44,7 +50,7 @@ button {
     background-color: rgb(128, 22, 13);
     padding: 15px;
     color: white;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 1em;
     text-transform: uppercase;
     cursor: pointer;
@@ -58,7 +64,6 @@ button:hover {
 figcaption {
     text-align: center;
 }
-
 
 /* Header Styles */
 
@@ -103,7 +108,8 @@ figcaption {
     width: auto;
 }
 
-.greeting img, .greeting h2 {
+.greeting img,
+.greeting h2 {
     padding: 0 20px;
 }
 
@@ -117,7 +123,6 @@ figcaption {
     font-size: 2em;
     color: rgb(128, 22, 13);
 }
-
 
 /* Bio Styles */
 
@@ -157,7 +162,6 @@ figcaption {
     flex-wrap: wrap;
     margin: 25px 0;
 }
-
 
 /* Projects Styles */
 
@@ -211,7 +215,6 @@ figcaption {
     border-radius: 50%;
 }
 
-
 /* Contact Styles */
 
 .contact-container {
@@ -228,7 +231,6 @@ figcaption {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
-
 
 /* Footer Styles */
 
@@ -248,10 +250,52 @@ footer p {
     font-size: 0.8em;
 }
 
-
 /* Responsive Styles */
 
+@media only screen and (max-width: 339px) {
+    .menu h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    nav a {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 449px) {
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .pipe {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 488px) {
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-links a {
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (max-width: 752px) {
+    .menu {
+        flex-direction: column;
+    }
+}
+
 @media only screen and (max-width: 905px) {
+    body {
+        overflow-x: hidden;
+        word-wrap: break-word;
+    }
+
     .menu {
         margin: 0 10px;
     }
@@ -269,41 +313,14 @@ footer p {
         flex-direction: column;
     }
 
-    .greeting img, .greeting h2 {
+    .greeting img,
+    .greeting h2 {
         padding: 0;
     }
 
     .greeting h2 {
         text-align: center;
     }
-}
-
-@media only screen and (max-width: 752px) {
-    .menu {
-        flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 449px) {
-    .pipe {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 339px) {
-    .menu h1 {
-        font-size: 2rem;
-    }
-}
-
-/* @media only screen and (min-width: 320px) and (max-width: 419px) {
-    .menu li {
-        text-align: center;
-        margin: 5px 0;
-    }
-} */
-
-@media only screen and (min-width: 320px) and (max-width: 905px) {
 
     .about {
         flex-direction: column;
@@ -314,12 +331,20 @@ footer p {
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 488px) {
-    .project-links {
+/* @media only screen and (min-width: 320px) and (max-width: 419px) {
+    .menu li {
+        text-align: center;
+        margin: 5px 0;
+    }
+} */
+
+/* @media only screen and (min-width: 320px) and (max-width: 905px) {
+
+    .about {
         flex-direction: column;
     }
 
-    .project-links a {
-        margin: 5px 0;
+    .about-img {
+        display: none;
     }
-}
+} */
